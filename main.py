@@ -1,8 +1,72 @@
-my_name = "Tahmid"
-birth_day = 1
-a = 2025
-b = 2008
-diff = a-b
-print( "My name is" ,my_name)
-print( f"My date of  is May {birth_day}  uhdjh vish {diff}")
-print( f"i am {diff} years old" ) 
+#Data types
+name = 'Tahmid'
+age = 10
+price = 99.99
+statemant = True
+box = None
+
+print(type(name))
+print(type(age))
+print(type(price))
+print(type(statemant))
+print(type(box))
+
+#Arithmetic operators
+a = 100
+b = 50
+sum = a + b
+diff = a - b
+mul = a * b
+div = a / b
+
+print(sum)
+print(diff)
+print(mul)
+print(div)
+print(a % b) #Vag shes
+print(a ** b) #a^b
+
+#relational operators
+a = 100
+b = 50
+
+print(a == b)
+print(a != b) #'!' Not bujhay
+print(a >= b)
+print(a <= b)
+
+#Assingment operators
+a = 10
+a += 5 #a = a + 5
+print(a)
+b = 10
+b -= 5 #b = b - 5
+print(b)
+c = 10
+c *= 10 #c = c * 10
+print(c)
+d = 10
+d /= 2 #d = d / 2
+print(d)
+e = 10
+e %= 3 #e = e % 3
+print(e)
+f = 10
+f **= 2 #f = f ** 2
+print(f)
+
+#Logical operators
+a = 50 
+b= 20
+print("And operator :", (a > b) & (a != b)) #2tai true hoile output true hbe
+print("And operator :", (a < b) & (a != b)) #1taw jodi false hoy tahole output false hbe
+print("Not operator :", not (a == b)) #opposite output hbe
+print("Or operator :", (a > b) or (a < b)) #1taw jodi true hoy tahole output true hbe ar jodi 2tai false hoy tahole output false hbe
+
+#Type conversion
+a = 5
+b = 5.2
+print(a+b) #a int hoileo python a ke float e convert korsi
+a = 5 
+b = int("2") #2 str kintu amra eikhane 2 ke int e ast korsi
+print(a+b)
