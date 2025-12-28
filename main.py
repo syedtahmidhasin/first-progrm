@@ -1,9 +1,9 @@
 #Data types
-name = 'Tahmid'
-age = 10
-price = 99.99
-statemant = True
-box = None
+name = 'Tahmid' #str
+age = 10 #int
+price = 99.99 #float
+statemant = True #bool
+box = None #none
 
 print(type(name))
 print(type(age))
@@ -30,10 +30,10 @@ print(a ** b) #a^b
 a = 100
 b = 50
 
-print(a == b)
+print(a == b) #is equal
 print(a != b) #'!' Not bujhay
-print(a >= b)
-print(a <= b)
+print(a >= b) #gearter then or equal
+print(a <= b) #less then or equal 
 
 #Assingment operators
 a = 10
@@ -66,7 +66,25 @@ print("Or operator :", (a > b) or (a < b)) #1taw jodi true hoy tahole output tru
 #Type conversion
 a = 5
 b = 5.2
-print(a+b) #a int hoileo python a ke float e convert korsi
+print(a+b) #a int hoileo python a ke float e convert korsi(type convertion)
 a = 5 
-b = int("2") #2 str kintu amra eikhane 2 ke int e ast korsi
+b = int("2") #2 str kintu amra eikhane 2 ke int e convert korsi(type casting)
 print(a+b)
+
+#Input
+input("your name :") #always str
+age = int(input("age :")) #input ke str bad e onno kono type e cast korte hoy
+price = float(input("price :"))
+print(type(age), type(price))
+
+#practice project
+num1 = float(input("num1 :"))
+num2 = float(input("num2 :"))
+print("sum :", num1 + num2)
+print("diff :", num1 - num2)
+print("mul :", num1 * num2)
+print("div :", num1 / num2)
+
+a = int(input("num1 :"))
+b = int(input('num2 :'))
+print(a >= b)
