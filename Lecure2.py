@@ -39,3 +39,15 @@ print(a.count("a")) #kono ekta charecter or word koybar ase
 name = input("Name :")
 print(len(name))
 print(name.count("a"))
+
+#conditional statements
+#condition 'if' diye start hoy then elif hoy ar last e else hoy
+light = "off"
+if(light == "red"): #condituion True hoile print output ashbe
+    print("stop")
+elif(light == "yellow"):
+    print("wait")
+elif(light == "green"): #if jodi false hoy taholeii python elif check korbe
+    print("go")
+else:
+    print("light is broken") #jodi shob condition false hoy taholeii python else check korbe
