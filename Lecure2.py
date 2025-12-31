@@ -35,19 +35,33 @@ print(a.replace(" ", "_")) #kono ekta charecter ke replace kore
 print(a.find("a")) #kono ekta charecter or word kothay ase oitar 1st indx
 print(a.count("a")) #kono ekta charecter or word koybar ase
 
-#practice
-name = input("Name :")
-print(len(name))
-print(name.count("a"))
-
 #conditional statements
 #condition 'if' diye start hoy then elif hoy ar last e else hoy
-light = "off"
-if(light == "red"): #condituion True hoile print output ashbe
-    print("stop")
-elif(light == "yellow"):
-    print("wait")
-elif(light == "green"): #if jodi false hoy taholeii python elif check korbe
-    print("go")
+marks = int(input("Your Marks :"))
+if(marks >= 90):
+    Grade = 'A'
+elif(marks >= 80 and marks < 90):
+    Grade = 'B'
+elif(marks >= 70 and marks < 80):
+    Grade = 'C'
 else:
-    print("light is broken") #jodi shob condition false hoy taholeii python else check korbe
+    Grade = 'D'
+print("Your Grade is :", Grade)  
+
+#pracice
+num = int(input("Enter a number: "))
+if(num % 2 == 0):
+    print("Even")
+else:
+    print("Odd")
+
+a = int(input("Num1:"))
+b = int(input("Num2:"))
+c = int(input("Num3:"))
+
+if(a > b and a > c):
+    print("Num1 is greatest")
+elif(b >c):
+    print("Num2 is greatest")
+else:
+    print("Num3 is greatest")
