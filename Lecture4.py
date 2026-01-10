@@ -25,6 +25,7 @@ student = {
 print(student["marks in sub"]["phy"])
 
 #Dictionary methods
+dict = {} #empty dict
 student = {
     "name" : "Tahmid",
     "marks in sub" : {
@@ -41,3 +42,18 @@ print(student.get("name")) #dict er kono key er value print kora(jodi oi key exi
 student.update({"grade" : {"A+"}}) #dict e kono new key & value add kora
 student.update({"name" : {"Tashrik"}}) #dict e kono exsisting key er value change kora
 print(student)
+
+#Set
+set = {1, 2, 2, 4, "Tahmid"} #set e duplicate value 1bar print hoy
+print(set)
+print(type(set))
+set2 = set() #empty set
+
+#Set method
+set = set()
+set.add(2) #set e 1ta value add kora
+set.add(2)
+set.add(3)
+set.remove(3) #set e 1ta value remove kora
+
+print(set)
