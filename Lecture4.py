@@ -55,5 +55,36 @@ set.add(2) #set e 1ta value add kora
 set.add(2)
 set.add(3)
 set.remove(3) #set e 1ta value remove kora
+set.clear() #set er shob value remove kore
+set.pop() #set er 1ta random value remove kore
 
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+print(set1.union(set2)) #set1 ar set2 er shob value nie new set print korbe
+print(set1.intersection(set2)) #set1 ar set2 er common value nie new set print korbe
+
+#Practice
+word_meaning = {
+    "table" : ["a pice of furniture", "list of facts & figure"],
+    "cat" : "a small animal"
+}
+print(word_meaning)
+
+sub = {"Python", "Java", "C++", "Python", "Javascript", "Java", "Python", "Java", "C++", "C"}
+print("The num of total classroom :", len(sub))
+
+marks = {}
+a = int(input("marks of phy:"))
+b = int(input("marks of chem:"))
+c = int(input("marks of bio:"))
+marks.update({"phy" : a})
+marks.update({"chem" : b})
+marks.update({"bio" : c})
+print(marks)
+
+set = set()
+num1 = ("int", 9)
+num2 = ('float', 9.0)
+set.add(num1)
+set.add(num2)
 print(set)
