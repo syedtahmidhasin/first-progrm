@@ -1,4 +1,4 @@
-#Loops
+#While loops
 i = 1
 while i <= 5: #jotokkhon count er value <= 5 thakbe totokkhon print korbe
     print(i)
@@ -55,3 +55,17 @@ while i <= 10:
         continue
     print(i)
     i +=1
+    
+#For loops
+num = [1, 2, 3, 4, 5]
+for a in num: #num er elimantes a te store hoye 1ta sequence e kaj kore
+    print(a)
+
+num = (1, 2, 2, 6, 5, 9, 3, 4, 7, 8)
+for val in num:
+    if("num == 4"):
+        print("FOUND")
+        break
+    print(val)
+else:
+    print("NOT FOUND")
