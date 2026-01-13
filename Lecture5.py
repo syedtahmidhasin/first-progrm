@@ -61,11 +61,59 @@ num = [1, 2, 3, 4, 5]
 for a in num: #num er elimantes a te store hoye 1ta sequence e kaj kore
     print(a)
 
-num = (1, 2, 2, 6, 5, 9, 3, 4, 7, 8)
-for val in num:
-    if("num == 4"):
-        print("FOUND")
+#Practice
+num = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+for a in num:
+    print(a)
+
+num = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 49)
+x = 49
+indx = 0
+for ele in num:
+    if(ele == x):
+        print("FOUND at indx", indx)
         break
-    print(val)
-else:
-    print("NOT FOUND")
+    indx += 1
+
+#Range
+seq = range(10) #numbers er sequence print kore(start hoy 0 theke ar end hoy range er ager number e)
+for i in seq:
+    print(i)
+
+for a in range(5):
+    print(a)
+
+for i in range(2, 10, 2): #1st start, 2nd stop, 3rd step
+    print(i)
+
+#Practice
+for i in range(1, 101):
+    print(i)
+
+for i in range(100, 0, -1):
+    print(i)
+
+num = int(input("number :"))
+for i in range(11):
+    print(num * i)
+
+#Pass
+for i in range(5):
+    pass #loop e kono kaj na korano
+print("Hello World")
+
+#Practice
+sum = 0
+n = 5
+i = 1
+while i <= n:
+    sum += i
+    i += 1
+
+print("total is", sum)
+
+n = 5
+a = 1
+for i in range(1, n+1):
+    a *= i
+print(a)
