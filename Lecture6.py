@@ -46,3 +46,11 @@ cal_fact(5)
 def taka(usd):
     print(usd * 122.2)
 taka(5)
+
+#Recursion
+def show(n):
+    if(n == 0): #base case
+        return
+    print(n)
+    show(n-1) #function er vitore call function
+show(5)
