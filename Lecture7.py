@@ -1,6 +1,6 @@
 #File I/O
 file = open("demo.txt", "r") #1st e file er name/path then mode
-data = file.read() #file er shob data str e print hbe
+data = file.read() #file er shob data str hishebe print hbe
 print(data)
 
 data = file.read(11) #file er 1st 11ta letter print hbe
@@ -36,4 +36,44 @@ with open("demo.txt", "r") as f:
     print(data)
 
 import os #os module import kora
-os.remove("demo.txt") #os module er maddhome kono file remode/delete kora
+os.remove("demo.txt") #os module er maddhome kono file remove/delete kora
+
+#Practice
+with open("practice.txt", "w") as f:
+    f.write("Hi everyone\nwe are learning File I/O\nusing Java\nI like proggraming in Java")
+
+with open("practice.txt", "r") as f:
+    data = f.read()
+
+new_data = data.replace("Java", "Python")
+print(new_data)
+
+with open("practice.txt", "w") as f:
+    f.write(new_data)
+
+def cheak_word():
+    word = "learning"
+    with open("practice.txt","r") as f:
+        data = f.read()
+        if(data.find(word) != -1):
+            print("Found")
+        else:
+            print("Not Found")
+
+cheak_word()
+
+def check_line():
+    word = "learning"
+    data = True
+    line_no = 1
+    with open("practice.txt", "r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            line_no += 1
+
+    return -1
+
+check_line()
